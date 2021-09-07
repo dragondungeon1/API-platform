@@ -1,0 +1,25 @@
+App\Entity\CheeseListing:
+  attributes:
+    name:
+      groups:
+        - 'cheeselisting-read'
+        - 'cheeselisting-wrie'
+        - 'cheeselisting-item-read'
+        - 'cheeselisting-item-write'
+    description:
+      groups:
+        - 'cheeselisting-read'
+        - 'cheeselisting-write'
+        - 'cheeselisting-item-read'
+        - 'cheeselisting-item-write'
+      price:
+        groups:
+          - 'cheeselisting-read'
+          - 'cheeselisting-write'
+          - 'cheeselisting-item-read'
+          - 'cheeselisting-item-write'
+      owner:
+          - 'cheeselisting-read'
+          - 'cheeselisting-write'
+          - 'cheeselisting-item-read'
+          - 'cheeselisting-item-write'

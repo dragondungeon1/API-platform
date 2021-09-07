@@ -1,0 +1,12 @@
+App\Entity\CheeseListing:
+  collectionOperations:
+    get:
+      normalization_context:
+        groups:
+          - 'cheeselisting-read'
+          - 'cheeselisting-write'
+  itemOperations:
+    get:
+      normalization_context:
+        groups:
+          - 'cheeselisting-item-read'
