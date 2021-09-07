@@ -3,23 +3,31 @@ App\Entity\CheeseListing:
     name:
       groups:
         - 'cheeselisting-read'
-        - 'cheeselisting-wrie'
+        - 'cheeselisting-write'
+        - 'user-read'
         - 'cheeselisting-item-read'
         - 'cheeselisting-item-write'
     description:
       groups:
         - 'cheeselisting-read'
-        - 'cheeselisting-write'
         - 'cheeselisting-item-read'
-        - 'cheeselisting-item-write'
       price:
+        groups:
+          - 'cheeselisting-read'
+          - 'cheeselisting-write'
+          - 'user-read'
+          - 'cheeselisting-item-read'
+      owner:
         groups:
           - 'cheeselisting-read'
           - 'cheeselisting-write'
           - 'cheeselisting-item-read'
           - 'cheeselisting-item-write'
-      owner:
+      owner_id:
+        groups:
           - 'cheeselisting-read'
-          - 'cheeselisting-write'
           - 'cheeselisting-item-read'
-          - 'cheeselisting-item-write'
+      username:
+        groups:
+          - 'user-read'
+

@@ -1,0 +1,23 @@
+App\Entity\User:
+attributes:
+  username:
+    groups:
+      - 'user-read'
+      - 'user-write'
+      - 'user-item-read'
+      - 'user-item-write'
+      - 'cheese_listing-item-get'
+      - 'cheese_listing-write'
+  email:
+    groups:
+      - 'user-read'
+      - 'user-write'
+      - 'user-item-read'
+      - 'user-item-write'
+  password:
+    groups:
+      - 'user-write'
+  cheeselistings:
+    groups:
+      - 'user-read'
+

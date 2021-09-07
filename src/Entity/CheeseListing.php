@@ -14,6 +14,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 /**
+ * @ORM\Entity(repositoryClass=CheeseListingRepository::class)
  */
 class CheeseListing
 {
@@ -52,7 +53,6 @@ class CheeseListing
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="cheeseListings")
      * @ORM\JoinColumn(nullable=false)
-     * @Groups({"cheese_listing:read", "cheese_listing:write"})
      */
     private $owner;
 

@@ -1,14 +1,14 @@
-App\Entity\CheeseListing:
+App\Entity\User:
   collectionOperations:
     get:
     post:
       normalization_context:
         groups:
-          - 'cheese_listings-read'
+          - 'user-read'
   itemOperations:
     get:
     put:
     delete:
       normalization_context:
         groups:
-          - 'cheese_listings-item-read'
+          - 'user-item-read'
